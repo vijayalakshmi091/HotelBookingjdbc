@@ -4,7 +4,7 @@ public class Metadata {
 		String url="jdbc:mysql://127.0.0.1:3306/hotel";
 		String Username="root";
 		String password="viji";
-		String query= "Select from *room ";
+		String query= "Select * from  room ";
 		Connection con=DriverManager.getConnection(url, Username, password);
 		Statement st=con.createStatement();
 		ResultSet rt=st.executeQuery(query);

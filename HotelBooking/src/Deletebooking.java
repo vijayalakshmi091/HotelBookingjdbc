@@ -5,7 +5,7 @@ public class Deletebooking {
 		String url="jdbc:mysql://127.0.0.1:3306/hotel";
 		String Username="root";
 		String password="viji";
-		String query= "delete  from bookings where booking_id=3";
+		String query= "delete  from bookings where booking_id=2";
 		Connection con=DriverManager.getConnection(url, Username, password);
 		PreparedStatement pst=con.prepareStatement(query);
 		pst.executeUpdate();
